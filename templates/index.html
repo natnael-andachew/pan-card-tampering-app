@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Tampering Detection</title>
+</head>
+<body>
+    <h2>Upload PAN Card and Template for Tampering Detection</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="pan_card">Upload PAN Card Image:</label>
+        <input type="file" name="pan_card" required><br><br>
+
+        <label for="template">Upload Template Image:</label>
+        <input type="file" name="template" required><br><br>
+
+        <input type="submit" value="Detect Tampering">
+    </form>
+</body>
+</html>
